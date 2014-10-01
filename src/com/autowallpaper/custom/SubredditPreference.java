@@ -1,24 +1,14 @@
 package com.autowallpaper.custom;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Set;
 
 import com.autowallpaper.helper.StringHelper;
-import com.h6ah4i.android.compat.preference.MultiSelectListPreferenceCompat;
 
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.res.TypedArray;
-import android.preference.ListPreference;
+import android.preference.MultiSelectListPreference;
 import android.util.AttributeSet;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.FrameLayout.LayoutParams;
 
-public class SubredditPreference extends MultiSelectListPreferenceCompat {
+public class SubredditPreference extends MultiSelectListPreference {
 	
 	public SubredditPreference(Context context) {
 		this(context, null);
