@@ -6,7 +6,6 @@ import java.util.Set;
 
 import com.autowallpaper.custom.SubredditPreference;
 import com.autowallpaper.helper.StringHelper;
-import com.google.analytics.tracking.android.EasyTracker;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -137,13 +136,11 @@ public class Settings extends PreferenceActivity implements OnSharedPreferenceCh
 	@Override
 	public void onStart() {
 		super.onStart();
-		EasyTracker.getInstance().activityStart(this);
 	}
 
 	@Override
 	public void onStop() {
 		super.onStop();
-		EasyTracker.getInstance().activityStop(this);
 	}
 
 	private Toast forceToast;
